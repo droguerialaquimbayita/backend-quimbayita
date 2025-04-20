@@ -32,7 +32,7 @@ public class BackupScheduler {
             databaseBackupService.exportAllTablesToCsv(directoryPath);
 
             // Subir a GitHub
-            String repoName = "AariazP/drogueria1-backup";
+            String repoName = "droguerialaquimbayita/backup";
             String commitMessage = "Backup de todas las tablas " + LocalDate.now();
             githubUploadService.uploadFilesToRepo(repoName, directoryPath, commitMessage);
 
